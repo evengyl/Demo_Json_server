@@ -1,0 +1,3 @@
+{
+    "/all" : "/bars?_expand=owner&owners.email_like=jeanme@gmail.com"
+}

@@ -1,0 +1,48 @@
+Installer Node js -> https://nodejs.org/en/
+Installer json-server avec -> npm install -g json-server
+
+Créer un fichier de db.json, avec dedans une architecture comme montrée par le prof
+Particularité obligatoire, pas de tableau d'objet initial mais un objet trad { }
+il contiendra des propriétés que le serveur pourra lire comme point d'entrée,
+exemple : 
+{
+    "users" : [
+        { ... }
+    ],
+    "commands" : [
+        { ... }
+    ]
+}
+
+lancer le server json avec -> json-server --watch db.json --port 3000
+
+
+Pour créer des relations, il faut que dans le json, il y aie, nameId de la props parent dans l'enfant
+exemple : 
+{
+    "users" : [
+        { "id" : 1, "name" : "Rachid" },
+        { "id" : 2, "name" : "Ayan" }
+    ],
+
+    "commands" : [
+        { "id" : 1, "userId" : 1, "total" : "8500"},
+        { "id" : 2, "userId" : 1, "total" : "8500"},
+        { "id" : 3, "userId" : 2, "total" : "500"}
+    ]
+}
+
+
+Pour contacter les enfant reviews du parents users il faut faire 
+-> localhost:3000/users?_embed=commands
+ou pour UN product
+-> localhost:3000/users/1?_embed=commands
+
+Pour contacter un parents de reviews donc sont product lié
+-> http://localhost:3000/reviews?_expand=product !!! attention ici pas de 's' à product :)
+ou pour UNE reviews
+-> http://localhost:3000/reviews/1?_expand=product
+
+
+pour le reste la doc vous servira -> https://www.npmjs.com/package/json-server
+PS : Google is your friend

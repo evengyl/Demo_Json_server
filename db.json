@@ -1,0 +1,151 @@
+{
+    "bars": [
+      {
+        "id": 1,
+        "ownerId": 1,
+        "adresseId": 1,
+        "carteId": 1,
+        "happyHourId": 1,
+        "name": "El cafe",
+        "owner" : {
+            "id" : 1,
+            "name" : "Jean Michel",
+            "email" : "jeanme@gmail.com",
+            "isPremium" : true,
+            "pass" : "jkoedfef"
+        }
+      },
+      {
+        "id": 2,
+        "ownerId": 1,
+        "adresseId": 2,
+        "carteId": 2,
+        "happyHourId": 2,
+        "name": "waff",
+        "owner" : {
+            "id" : 2,
+            "name" : "Paul Naref",
+            "email" : "paul.naref@hotmail.com",
+            "isPremium" : false,
+            "pass" : "azerngoezar"
+        }
+      },
+      {
+        "id": 3,
+        "ownerId": 2,
+        "adresseId": 3,
+        "carteId": 3,
+        "happyHourId": 3,
+        "name": "Tavernier",
+        "owner" : {
+            "id" : 3,
+            "name" : "Mickeal Jackson",
+            "email" : "jackson@hotmail.com",
+            "isPremium" : false,
+            "pass" : "jack"
+        }
+      },
+      {
+        "id": 4,
+        "ownerId": 3,
+        "adresseId": 4,
+        "carteId": 4,
+        "happyHourId": 4,
+        "name": "Le Montmartre",
+        "owner": {
+            "id" : 3,
+            "name" : "Mickeal Jackson",
+            "email" : "jackson@hotmail.com",
+            "isPremium" : false,
+            "pass" : "jack"
+        }
+      }
+      
+    ],
+    "adresses" : [
+        {
+            "id" : 1,
+            "street" : "avenue de la Couronne",
+            "streetnumber" : "463",
+            "cp" : 1050,
+            "city" : "Bruxelles",
+            "long" : "50.8160034988572",
+            "lat" : "4.39038896427245"
+        },
+        {
+            "id" : 2,
+            "street" : "chaussee de Boondael",
+            "streetnumber" : "455",
+            "cp" : 1050,
+            "city" : "Bruxelles",
+            "long" : "50.816294093940584",
+            "lat" : "4.3891957304137845"
+        },
+        {
+            "id" : 3,
+            "street" : "chaussee de Boondael",
+            "streetnumber" : "445",
+            "cp" : 1050,
+            "city" : "Bruxelles",
+            "long" : "50.81653981625617",
+            "lat" : "4.388844358019794"
+        },
+        {
+            "id" : 4,
+            "street" : "chaussee de Boondael",
+            "streetnumber" : "344",
+            "cp" : 1050,
+            "city" : "Bruxelles",
+            "long" : "50.81820028933194",
+            "lat" : "4.385285470023669"
+        }
+    ],
+    "events" : [
+        {
+            "id" : 1,
+            "barId" : 1,
+            "datetime" : "21/02/2022 18:00",
+            "name" : "ProjetX",
+            "description" : "Soirée de folie avec Dj Set"
+        },
+        {
+            "id" : 1,
+            "barId" : 3,
+            "datetime" : "21/02/2022 18:00",
+            "name" : "Salsa Party",
+            "description" : "Soirée embrasée avec musiques latinos, caliente"
+        }
+    ],
+    "happyHours" : [
+        {
+            "id" : 1,
+            "isBeerDoubled" : true,
+            "isCocktailsDoubled" : true,
+            "isBeerDiscount" : false,
+            "isCocktailsDiscount" : false,
+            "discount" : 0,
+            "strat" : "18:00",
+            "end" : "20:00"
+        },
+        {
+            "id" : 2,
+            "isBeerDoubled" : true,
+            "isCocktailsDoubled" : true,
+            "isBeerDiscount" : false,
+            "isCocktailsDiscount" : false,
+            "discount" : 0,
+            "strat" : "18:00",
+            "end" : "20:00"
+        },
+        {
+            "id" : 3,
+            "isBeerDoubled" : false,
+            "isCocktailsDoubled" : false,
+            "isBeerDiscount" : true,
+            "isCocktailsDiscount" : true,
+            "discount" : 50,
+            "strat" : "18:00",
+            "end" : "20:00"
+        }
+    ]
+  }
